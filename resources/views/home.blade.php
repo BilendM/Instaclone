@@ -11,13 +11,13 @@
                 <h1>{{ $user->username }}<h1>
             </div>
             <div class="d-flex">
-                <div class="pr-5"><strong>91 </strong>Posts</div>
+                <div class="pr-5"><strong>91 </strong></div>
                 <div class="pr-5"><strong>540 </strong>Followers</div>
                 <div class="pr-5"><strong>754 </strong>Following</div>
             </div>
-            <div class="pt-4 font-weight-bold">Bilend Mohammed</div>
-            <div class="">🦉</div>
-            <div class=""><a href="#" class="">Bilend Mohammed's link</a></div>
+            <div class="pt-4 font-weight-bold">{{ $user->profile->title }}</div>
+            <div class="">{{ $user->profile->description }}</div>
+            <div class=""><a href="#" class="">{{ $user->profile->url}}</a></div>
         </div>
     </div>
     <div class="row pt-5">
